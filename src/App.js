@@ -37,6 +37,7 @@ class App extends Component {
         />
 
         <Title>
+          Click on an image to earn points! You will loose if you click on any images more than once!
         </Title>
 
         <ImageCard
