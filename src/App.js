@@ -25,6 +25,15 @@ class App extends Component {
     clicked: []
   }
 
+  handleClick = id => {
+    if (this.state.clicked.indexOf(id) === -1) {
+      this.handleIncrement();
+      this.setState({ clicked: this.state.clicked.concat(id) });
+    } else {
+      this.handleReset();
+    }
+  };
+
   render() {
     return (
       // <div className="App">
