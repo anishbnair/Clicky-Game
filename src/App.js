@@ -34,6 +34,21 @@ class App extends Component {
     }
   };
 
+  handleIncrement = () => {
+    const newScore = this.state.currentScore + 1;
+    this.setState({
+      currentScore: newScore,
+      guessStatus: "You guessed correctly!"
+    });
+    if (newScore >= this.state.topScore) {
+      this.setState({ topScore: newScore });
+    }
+    else if (newScore === 12) {
+      this.setState({ guessStatus: "You win!" });
+    }
+    this.handleShuffle();
+  };
+
   render() {
     return (
       // <div className="App">
