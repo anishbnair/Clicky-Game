@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import ImageCard from "./components/ImageCard";
+import Nav from "./components/Nav";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
 import './App.css';
 
 class App extends Component {
