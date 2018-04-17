@@ -7,6 +7,15 @@ import Title from "./components/Title";
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    images,
+    currentScore: 0,
+    topScore: 0,
+    guessStatus: "",
+    clicked: []
+  }
+
   render() {
     return (
       // <div className="App">
