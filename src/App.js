@@ -4,10 +4,11 @@ import ImageCard from "./components/ImageCard";
 import Nav from "./components/Nav";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import images from "./images.json";
 import './App.css';
 
 // Shuffle images
-function randomFriends(array) {
+function randomImages(array) {
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -18,7 +19,7 @@ function randomFriends(array) {
 class App extends Component {
 
   state = {
-    friends,
+    images,
     currentScore: 0,
     topScore: 0,
     guessStatus: "",
@@ -60,8 +61,8 @@ class App extends Component {
   };
 
   handleShuffle = () => {
-    let shuffledFriends = randomFriends(friends);
-    this.setState({ friends: shuffledFriends });
+    let shuffledImages = randomImages(images);
+    this.setState({ images: shuffledImages });
   };
 
   render() {
@@ -88,15 +89,23 @@ class App extends Component {
           Click on an image to earn points! You will loose if you click on any images more than once!
         </Title>
 
-        <ImageCard
-          key={friend.id}
-          handleClick={this.handleClick}
-          handleIncrement={this.handleIncrement}
-          handleReset={this.handleReset}
-          handleShuffle={this.handleShuffle}
-          id={friend.id}
-          image={friend.image}
-        />
+        <Container>
+          <Row>
+            {this.state.images.map(gameImage => (
+              <Column size="md-3 sm-6">
+                <ImageCard
+                  key={gameImage.id}
+                  handleClick={this.handleClick}
+                  handleIncrement={this.handleIncrement}
+                  handleReset={this.handleReset}
+                  handleShuffle={this.handleShuffle}
+                  id={gameImage.id}
+                  image={gameImage.image}
+                />
+              </Column>
+            ))}
+          </Row>
+        </Container>
 
       </Wrapper>
     );
