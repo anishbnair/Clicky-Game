@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/MarioSMBW.png/220px-MarioSMBW.png",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/f1/LuigiNSMBW.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Peach_%28Super_Mario_3D_World%29.png/220px-Peach_%28Super_Mario_3D_World%29.png",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "https://upload.wikimedia.org/wikipedia/en/d/d1/Toad_3D_Land.png",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/39/YoshiMarioParty9.png",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/f9/Birdo-MP9.png",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Toadette_%28Mario%29.png/220px-Toadette_%28Mario%29.png",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIa7bj3CgywKUPDP_CSwf1wq_kcy-SXv3geTXtDCbQSYEg7u_J",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "image": "https://www.mariowiki.com/images/thumb/a/a1/Boo_CTTT.png/200px-Boo_CTTT.png",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "image": "https://www.mariowiki.com/images/thumb/7/79/Magikoopa_Artwork_-_Super_Mario_3D_World.png/240px-Magikoopa_Artwork_-_Super_Mario_3D_World.png",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "image": "https://vignette.wikia.nocookie.net/sonic/images/3/3f/Waluigi_6.png/revision/latest?cb=20161026131815",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKOsxlR7Vff2b_vmab5-83IUsvwRWV9eISUcLPY0WoK4PzMzDQAg",
+        "clicked": false
+    }
+]
