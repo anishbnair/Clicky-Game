@@ -30,6 +30,10 @@ class App extends Component {
       <Wrapper>
 
         <Nav
+          title="Clicky Game"
+          score={this.state.currentScore}
+          topScore={this.state.topScore}
+          guessStatus={this.state.guessStatus}
         />
 
         <Title>
