@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
 
   state = {
-    images,
+    friends,
     currentScore: 0,
     topScore: 0,
     guessStatus: "",
@@ -41,6 +41,13 @@ class App extends Component {
         </Title>
 
         <ImageCard
+          key={friend.id}
+          handleClick={this.handleClick}
+          handleIncrement={this.handleIncrement}
+          handleReset={this.handleReset}
+          handleShuffle={this.handleShuffle}
+          id={friend.id}
+          image={friend.image}
         />
 
       </Wrapper>
