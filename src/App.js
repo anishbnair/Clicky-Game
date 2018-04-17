@@ -49,6 +49,16 @@ class App extends Component {
     this.handleShuffle();
   };
 
+  handleReset = () => {
+    this.setState({
+      currentScore: 0,
+      topScore: this.state.topScore,
+      guessStatus: "You guessed incorrectly!",
+      clicked: []
+    });
+    this.handleShuffle();
+  };
+
   render() {
     return (
       // <div className="App">
