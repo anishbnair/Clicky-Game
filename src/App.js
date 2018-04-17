@@ -59,6 +59,11 @@ class App extends Component {
     this.handleShuffle();
   };
 
+  handleShuffle = () => {
+    let shuffledFriends = randomFriends(friends);
+    this.setState({ friends: shuffledFriends });
+  };
+
   render() {
     return (
       // <div className="App">
