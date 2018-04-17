@@ -1,25 +1,16 @@
 import React from "react";
-import "./Nav.css";
+import "./ImageCard.css";
 
-const Nav = props => (
-    <nav>
-        <ul>
-            <li>
-                <a href="/clicky-game/">
-                    {props.title}
-                </a>
-            </li>
-            <li id="rw">
-                {props.guessStatus}
-            </li>
-            <li>
-                Current Score: {props.score}
-            </li>
-            <li>
-                Best Score: {props.topScore}
-            </li>
-        </ul>
-    </nav>
+const ImageCard = props => (
+    <div
+        className="card"
+        value={props.id}
+        onClick={() => props.handleClick(props.id)}
+    >
+        <div className="img-container">
+            <img alt={props.name} src={props.image} />
+        </div>
+    </div>
 );
 
-export default Nav; 
+export default ImageCard;
