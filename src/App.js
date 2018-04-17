@@ -4,6 +4,9 @@ import ImageCard from "./components/ImageCard";
 import Nav from "./components/Nav";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import Container from "./components/Container";
+import Column from "./components/Column";
+import Row from "./components/Row";
 import images from "./images.json";
 import './App.css';
 
